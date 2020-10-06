@@ -13,7 +13,10 @@ let mix = require("laravel-mix");
 mix
   .js("src/app.js", "dist/")
   .sass("src/app.scss", "dist/")
-  .browserSync("localhost:3000");
+  .browserSync({
+    files: ["src/**/*.css", "src/**/*.js", "site/templates/*"],
+    proxy: "localhost:3000"
+  });
 
 // Full API
 // mix.js(src, output);
