@@ -11,10 +11,11 @@ let mix = require("laravel-mix");
  |
  */
 mix
-  .js("src/app.js", "dist/")
-  .sass("src/app.scss", "dist/")
+  .js("src/js/app.js", "dist/")
+  .sass("src/css/app.scss", "dist/")
+  .copy("src/img", "dist/img")
   .browserSync({
-    files: ["src/**/*.scss", "src/**/*.js", "site/templates/*"],
+    files: ["dist/*.css", "dist/*.js", "site/templates/*"],
     proxy: "localhost:3000"
   });
 
