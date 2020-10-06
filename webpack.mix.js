@@ -14,7 +14,7 @@ mix
   .js("src/app.js", "dist/")
   .sass("src/app.scss", "dist/")
   .browserSync({
-    files: ["src/**/*.css", "src/**/*.js", "site/templates/*"],
+    files: ["src/**/*.scss", "src/**/*.js", "site/templates/*"],
     proxy: "localhost:3000"
   });
 
