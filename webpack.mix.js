@@ -10,15 +10,6 @@ let mix = require("laravel-mix");
  | file for your application, as well as bundling up your JS files.
  |
  */
-
-mix.webpackConfig({
-  devServer: {
-    contentBase: path.join(__dirname),
-    compress: true,
-    port: 9000
-  }
-});
-
 mix
   .js("src/app.js", "dist/")
   .sass("src/app.scss", "dist/")
