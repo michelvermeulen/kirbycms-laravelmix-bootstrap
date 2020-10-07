@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "npm run development",
     "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "php -S localhost:3000 & npm run development -- --watch",
+    "watch": "npm run development -- --watch",
+    "serve": "php -S localhost:3000",
     "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "prod": "npm run production",
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
@@ -25,6 +26,7 @@
     "vue-template-compiler": "^2.6.12"
   },
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
     "bootstrap": "^4.5.2"
   }
 }
