@@ -24,5 +24,8 @@
     },
     "config": {
         "optimize-autoloader": true
+    },
+    "require-dev": {
+        "laravel/homestead": "^11.2"
     }
 }
