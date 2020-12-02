@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'debug'  => false,
+    'debug'  => true,
     'email' => [
         'transport' => [
-            'type' => 'sendmail',
+            'type' => 'smtp',
             'host' => 'localhost',
             'port' => 1025,
             'security' => false

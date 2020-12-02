@@ -16,7 +16,8 @@ mix
   .copy("src/img", "dist/img")
   .browserSync({
     files: ["dist/*.css", "dist/*.js", "site/templates/*"],
-    proxy: "localhost:3000"
+    proxy: "homestead.test",
+    open: false
   });
 
 // Full API
